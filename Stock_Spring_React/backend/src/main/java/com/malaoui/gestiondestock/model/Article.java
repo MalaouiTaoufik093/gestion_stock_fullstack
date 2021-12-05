@@ -1,7 +1,20 @@
 package com.malaoui.gestiondestock.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-public class Article extends AbstractEntity{
+@Data 
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+
+public class Article extends AbstractEntity {
+	
+	@Id
+	private Integer id;
 
 }
